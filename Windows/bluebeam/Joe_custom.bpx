@@ -139,7 +139,7 @@
         <Added>True</Added>
       </Column>
       <Column Key="Status">
-        <Width>124</Width>
+        <Width>280</Width>
         <Visible>True</Visible>
         <Added>True</Added>
       </Column>
@@ -285,6 +285,21 @@
     <CollapseFileAttachments>False</CollapseFileAttachments>
     <CollapseFileProperties>False</CollapseFileProperties>
     <CollapseCustomProperties>False</CollapseCustomProperties>
+    <CollapseCategory Key="Widget">
+      <Active>Appearance</Active>
+      <Category Key="Appearance">
+        <Panel>General</Panel>
+        <Panel>Appearance</Panel>
+        <Panel>Options</Panel>
+      </Category>
+      <Category Key="Advanced">
+        <Panel>Format</Panel>
+        <Panel>Actions</Panel>
+        <Panel>Calculate</Panel>
+        <Panel>Validation</Panel>
+        <Panel>SelectionChange</Panel>
+      </Category>
+    </CollapseCategory>
   </Record>
   <Record Key="Hyperlinks">
     <DestinationsPercent>0.25</DestinationsPercent>
@@ -809,17 +824,14 @@
   <Record Key="DockContainer">
     <DockRoot Name="Left">
       <Collapsed>True</Collapsed>
-      <Size>40</Size>
-      <DockPanel>
-        <Active>Flags</Active>
-        <DockTab Name="Flags" />
-      </DockPanel>
+      <Size>616</Size>
+      <DockPanel />
     </DockRoot>
     <DockRoot Name="Right">
-      <Collapsed>True</Collapsed>
-      <Size>357</Size>
+      <Collapsed>False</Collapsed>
+      <Size>328</Size>
       <DockPanel>
-        <Active>Bookmarks</Active>
+        <Active>Tool Chest Classic</Active>
         <DockTab Name="File Manager" />
         <DockTab Name="Studio" />
         <DockTab Name="Search" />
@@ -827,12 +839,12 @@
         <DockTab Name="Properties" />
         <DockTab Name="Measurements" />
         <DockTab Name="Thumbnails" />
-        <DockTab Name="Tool Chest" />
+        <DockTab Name="Tool Chest Classic" />
       </DockPanel>
     </DockRoot>
     <DockRoot Name="Bottom">
       <Collapsed>True</Collapsed>
-      <Size>468</Size>
+      <Size>320</Size>
       <DockPanel>
         <Active>Markups</Active>
         <DockTab Name="Markups" />
@@ -1677,8 +1689,95 @@
   </Record>
   <Record Key="ReduceFileSizeOptions" />
   <Record Key="StateModels">
-    <Model Key="MigrationStatus" Visible="True" />
+    <Model Key="MigrationStatus" Visible="False" />
+    <Model Key="BSI_DJZQTAEPWEQOHYEE" Visible="False" />
+    <Model Key="Review" Visible="False" />
+    <Model Key="BSI_DRRPKDPSYMYYDWZB" Visible="False" />
+    <Model Key="BSI_QUOGCSHFSMERCBLJ" Visible="True" />
+    <Default>789c8d52cb4ec33010fc02fec1ca018114e8bd9c1c67db9834b66b3b44e9058526484881486de152e5dfd9f441dd366ab9d93bb3e31defdcb0a6ae8bb7c7a22ccdaa5855495356f5dd7a2e8acf6ae80586bf865aab3854264ff23ccc6681e7cf53be854d24150935cdb818130d2f1c32cfe74b53fc5425ff528be6fda3469a5d7c579edf6cf497c3b5b76542486e09935a03b3de70fd27da83b6fe5f75400420364ab58d40132e46b2afb98fe6a8a0361797df3ee0d8b73b42e8a34d1ae6c44a3cd8540bb7fb020b35a62918cba518a0ad240161c9486a0262cc7154edea5c61f66ae15354b36840c6ecb2944b6cdbf6fee97a009e67534b41653095510ee00420a13a4e153196dad4fc67f5ddd3388ad4a13ba55345734ae3df734527fb4839cc330cf970089fc374aac80978d2c371aa9b70743bebbe5a7186b68e8371821df103ca6216018bfb5b0e7037c9fed26d444dc0c2d144e7e8cee1032692282d191873eaf308db2cf51775311cec</Default>
     <DefaultModel>Review</DefaultModel>
+    <DefaultProperties>
+      <Properties>
+        <Model>BSI_DJZQTAEPWEQOHYEE</Model>
+        <Status>ARCH COORD</Status>
+        <Color>-16776961</Color>
+      </Properties>
+      <Properties>
+        <Model>BSI_DJZQTAEPWEQOHYEE</Model>
+        <Status>PM REVIEW</Status>
+        <Color>-16711936</Color>
+      </Properties>
+      <Properties>
+        <Model>BSI_DJZQTAEPWEQOHYEE</Model>
+        <Status>ENG REVIEW</Status>
+        <Color>-65536</Color>
+      </Properties>
+      <Properties>
+        <Model>BSI_DJZQTAEPWEQOHYEE</Model>
+        <Status>BIM REVIEW</Status>
+        <Color>-32704</Color>
+      </Properties>
+      <Properties>
+        <Model>BSI_DJZQTAEPWEQOHYEE</Model>
+        <Status>READY FOR PICKUP</Status>
+        <Color>-32704</Color>
+      </Properties>
+      <Properties>
+        <Model>BSI_DJZQTAEPWEQOHYEE</Model>
+        <Status>READY FOR BACKCHECK</Status>
+        <Color>-65281</Color>
+      </Properties>
+      <Properties>
+        <Model>BSI_DJZQTAEPWEQOHYEE</Model>
+        <Status>BACKCHECK COMPLETE</Status>
+        <Color>-10197916</Color>
+      </Properties>
+      <Properties>
+        <Model>BSI_DJZQTAEPWEQOHYEE</Model>
+        <Status>OTHER</Status>
+        <Color>-16711936</Color>
+      </Properties>
+      <Properties>
+        <Model>BSI_DRRPKDPSYMYYDWZB</Model>
+        <Status>REVIEWED &amp; CORRECT</Status>
+        <Color>-16711936</Color>
+      </Properties>
+      <Properties>
+        <Model>BSI_DRRPKDPSYMYYDWZB</Model>
+        <Status>REVIEWED/ NEED FURTHER INFO</Status>
+        <Color>-256</Color>
+      </Properties>
+      <Properties>
+        <Model>BSI_DRRPKDPSYMYYDWZB</Model>
+        <Status>REVIEWED &amp; INCORRECT</Status>
+        <Color>-32768</Color>
+      </Properties>
+      <Properties>
+        <Model>BSI_DRRPKDPSYMYYDWZB</Model>
+        <Status>CORRECTED, READY TO RETURN</Status>
+        <Color>-65536</Color>
+      </Properties>
+      <Properties>
+        <Model>BSI_DRRPKDPSYMYYDWZB</Model>
+        <Status>QUESTION/ COMMENT FOR ENGINEER</Status>
+        <Color>-16776961</Color>
+      </Properties>
+      <Properties>
+        <Model>BSI_DRRPKDPSYMYYDWZB</Model>
+        <Status>QUESTION/ COMMENT TO ARCH/ GC</Status>
+        <Color>-8388353</Color>
+      </Properties>
+      <Properties>
+        <Model>BSI_DJZQTAEPWEQOHYEE</Model>
+        <Status>PRINCIPAL REVIEW</Status>
+        <Color>-16711936</Color>
+      </Properties>
+      <Properties>
+        <Model>BSI_DJZQTAEPWEQOHYEE</Model>
+        <Status>ENG - IN PROCESS</Status>
+        <Color>-8388480</Color>
+      </Properties>
+    </DefaultProperties>
   </Record>
   <Record Key="BookmarkTemplates">
     <Template Index="0">
@@ -1861,7 +1960,7 @@
     <Item>
       <ID>BXZBGCUSBYGNIUOC</ID>
       <Name>Flatten &amp; E-mail</Name>
-      <Icon>789ceb0cf073e7e592e2626060e0f5f4700902d22220ccc106247b3b657981144bbaa3af2303c3c67eee3f89ac403e67814764310303370f0833da3b289d000afef174710cb1f05f3bf9a060938180ab26a3554286437ace41269d8393756fb485e7cfb3bdd1a05bb081312ae18dc2be7e697583891a051537dfdcbf6bafe8f06c4ef4941516ed1094b7325f7b3b8bf361f53753ff37a7e54cdb92bf63dba193e6cb03d69fcd10d334d812718859efd4f180feafd3a609b3b56d3bbf36f0499cffd59bc24a6d725bee71fafcfec592d122e8dc2877efa27ff91d5d13c147bc57fe448b9c5cbf20fa180febd7b91219d11926dcba324b7e2b2dcc9fd434534aeaf67cc765adfa428f9aef273ce3b34a147db5efc7cfdaa01f8edf445f4cb9246a2e7fd892e5d8da4f19c15c6ddc9207ae16dd5de8f76bdf614d03997da98553e472e7f59d8e3bb12d55e3f7fad01e60383078bafab9ac734a680200d82589ce</Icon>
+      <Icon>789ceb0cf073e7e592e2626060e0f5f4700902d22220ccc106247b3b657981144bbaa3af2303c3c67eee3f89ac403e67814764310303370f0833da3b289d000a3ef674710cb1f05f3be92c6f938340ab26a3b5828981dab604c6690f4e8ae51c5e6d7e5e6e1963f48c66de1b4c1b9b4dfde7a7cc64bdb943c6aeeedeb91a1de6508e85519354345439bd3c9b82eeb107737a3f68f50fbef95bfd5ca3dc37b543a6e27efb32b9ae6c62dfebac78be77e51ddfa78f66dbae48cc15b666738abbaec3f2b523a3a436484294a7ec40ce27deb4d6338f2553cffe583e21fbfefa195fc5cf70eddcc7ac777bd6a9e67a8f74adf69c8712cb92043efdf279b9caa5e231df6d8bf7ad3b5d0e4ddbedd2f77999f834814eeb3beaac960961736e4efd3e43b1ecd7cc87f63bd6f3f49d987c2828eec4b6540de70b6fcf02bdcbe0e9eae7b2ce29a10900ea007c09</Icon>
       <IconType>Email</IconType>
       <IconColor>-16776961</IconColor>
       <Commit>False</Commit>
@@ -1870,7 +1969,7 @@
     <Item>
       <ID>OJVBAOXPYMKAWPJV</ID>
       <Name>Export Tiff with Header</Name>
-      <Icon>789ceb0cf073e7e592e2626060e0f5f4700902d22220ccc106247b3b657981144bbaa3af2303c3c67eee3f89ac403e67814764310303370f0833da3b289d000adef474710cb1f07f3ae920ef210311676ba6bb0ca58c13221a23816847e1b3034cb10bd9c55e70894ab3447b69fd9f3fc58da993b97db9fcff1b6121194e1cf1473b1eeee316b539e056dc25c8b3e2db9143af77072967713df6591abd57ddcd60435b45e42f96df5b943f37662c68d9efbf74d76cfe25cb36b4546d6a7825f56fc385e423fedc0f6d9b264a1a340a7fbfd792d8ec7dc0bac1709e7ec3d2b5e689371e087df8d6a0ffa6e4bdefcdf9d794eff17d987aa7586ec779aed0eb0d3e5af356fc556de39dd2b03e957187ebd9fc13d39fdd2fe0fdf86abdcfb93bb30f9de73ccb6d555036a950ae3c14e849064f573f97754e094d00e6697b79</Icon>
+      <Icon>789ceb0cf073e7e592e2626060e0f5f4700902d22220ccc106247b3b657981144bbaa3af2303c3c67eee3f89ac403e67814764310303370f0833da3b289d000a9ef474710cb1f03f3ae920ef21031e576ba69c865d0d13231a23816847e1b307ac1107d9c5125abb789b74244ffef59c3b41a9f087576efdfe08bff629973e789f654af4e2ade2b8cce6d8ed6092103b639da049b683f3ca770bacbfa4f09a5aae778a3fb485bfb12239e4bf4338a3f72bb6692db6891b5d6f088b458318ee9b1fac7748b4e2ba7c39ae4a68d9e5a8051a17f6e9b3dd5df452fac15d35995a39df9bfedd45f72e2ebbb2675ebb9280faca938dcbf316bc3b5556b639a27cc5e467d66b4e56fed55e7d6ed6f9bcf8d5e656056593386c382f013dc5e0e9eae7b2ce29a109001ef46f3c</Icon>
       <IconType>HeaderAndFooter</IconType>
       <IconColor>-16776961</IconColor>
       <Commit>False</Commit>
@@ -1879,7 +1978,7 @@
     <Item>
       <ID>DFZYIJTYPXXTPJWZ</ID>
       <Name>Print with Draft Stamp</Name>
-      <Icon>789ceb0cf073e7e592e2626060e0f5f4700902d22220ccc106247b3b657981144bbaa3af2303c3c67eee3f89ac403e67814764310303370f0833da3b289d000aeef274710cb1f07f3bf1a0609381806b66a358c68166dd886edd8aadbcd11f1298b739706f71e0fe68df2ebb79439ada81a392fcfd67fffdf973b3456de9166dee85f53241bc9f3faf6b3cf1a5579e2f25993f46a194fbff017f85d75cebcace7130e7ee6dfb9eeebba046ddf081f8628bc5b797edee92d5528cd76fcbac156ed93631f068b6e0275b56e1b29def7c02046f702e7b127645b92a25e46314e74fdd8a25fd3c5a71b395fdbd1b76f8dbe69f58f2517ada899a9ff16ddcbf940aa4575632364755cb9cfbcfb608e80b064f573f97754e094d0006ac65d1</Icon>
+      <Icon>789ceb0cf073e7e592e2626060e0f5f4700902d22220ccc106247b3b657981144bbaa3af2303c3c67eee3f89ac403e67814764310303370f0833da3b289d000a6ef474710cb1f07f3b71a360b3018f6ba4a2f68686ae351322231473af9de0d2dce21076816bcd01ae732ffda64bfc944e2998f968eec61f7562491e9abcb69a5c87a6447d78bef0c2f5ac05391a21cca9ce0ba5347ed75e6c9e7ae1fe9553f13f847f39befff02149e3cb42312ecf100d1ff3c4596b2fbbce5836d5e0b8bc1bc7e41517e6cd57dbbb2021e4c736bee37bfa9a021f66c4be0a7f5965abcaf2e8e98680f454e3ea9b71e92be63e92cc9bf8f4d3fe3577b6c6719cffc4d81c552de3d8e4a60d743c83a7ab9fcb3aa7842600b99f68f5</Icon>
       <IconType>Printer</IconType>
       <IconColor>-16776961</IconColor>
       <Commit>False</Commit>
@@ -1888,7 +1987,7 @@
     <Item>
       <ID>EUMBCECZXPQPVYPZ</ID>
       <Name>Convert to Grayscale</Name>
-      <Icon>789ceb0cf073e7e592e2626060e0f5f4700902d22220ccc106247b3b657981144bbaa3af2303c3c67eee3f89ac403e67814764310303370f0833da3b289d000abef774710cb1f03f3bf1ac60938140aba6a355418e437acec1a89c83dab9159fdf1c64cb696ce6bdc094ccfe71af8fdc1acf8243070e1ede2efdedb972d2d339d1a2f2b78edf13fdc0343b42e031b3788ea11a47be6a90bc578ba2f7aeadb5ddfc4b0f152cfbc2cbb72ad2a4658a99eb9de957aeb5b04db8b42cc1deddc6bd8d355ae7617d8bef658bee57dd2d3b3f8bd8452c9c56b2f86a8b650ebfb5fa8542f12f0fceec9a75384167ce2ec5b2a80bad9f4503a2565bf29c13b063ccdf11dcbba2d344efaf53b108e3bd49f6337f9ea8529ac35da6faeee71aa5a03a45f667d95c076c6d3e4b7f5af6d85ce7a8c7dbfd3e7a6beaf7565aaefbc510d4993b73c3ceeb67815e67f074f57359e794d0040027c981b5</Icon>
+      <Icon>789ceb0cf073e7e592e2626060e0f5f4700902d22220ccc106247b3b657981144bbaa3af2303c3c67eee3f89ac403e67814764310303370f0833da3b289d000a9ef774710cb1f05f3bf120ef21031e066ba69c865d0d13231a23231af3af3d383ebb5dfc0557dd0606ed901c8194274d4fad26cefe56d87bfb46f8f19745e7ee4eab916f99c06cc39998ce3a6dfe85bc0c978a7e8fc34e91ea2f0f3e33e1544d7b395ba0cf6cbde78aa566f9132f1c7ed6da2ab774d6abb4de20dfd2c99e9aa967d59cf4f50c85fd5ce3c257b7c83d3b91ee5471b2b7bfa58093d35b56886963c0a3d91edfb35b9a4b6ebcae098f70e6ac7e39a9ffcceb93a27aae9dc7d314cf7ba57d9b503e4fb1fcd7fc4411d5abdbcfc4fcfcfde67df64f86a0cedc9997ca575a00bdc6e0e9eae7b2ce29a10900df99755f</Icon>
       <IconType>Custom</IconType>
       <IconColor>-8355712</IconColor>
       <Commit>True</Commit>
@@ -1945,7 +2044,7 @@
         <Item>Tab.Measurements</Item>
         <Item>Tab.Markups</Item>
         <Item />
-        <Item EscapedKey="True">DS4zVyYkEJdS8MOdUWW/jA==</Item>
+        <Item>DS4zVyYkEJdS8MOdUWW/jA==</Item>
         <Item>âÊvãß( !CØ gJ</Item>
         <Item>Toggle.Reuse</Item>
         <Item Visible="False">Measure.Calibrate</Item>
@@ -1972,7 +2071,7 @@
     <ToolStrip>
       <Name>Shapes</Name>
       <X>3</X>
-      <Y>23</Y>
+      <Y>49</Y>
       <Visible>False</Visible>
       <Location>Top</Location>
       <Items>
@@ -1991,7 +2090,7 @@
     <ToolStrip>
       <Name>toolStripStyles</Name>
       <X>3</X>
-      <Y>23</Y>
+      <Y>49</Y>
       <Visible>False</Visible>
       <Location>Top</Location>
       <Items>
@@ -2004,7 +2103,7 @@
     <ToolStrip>
       <Name>toolStripAnnotation</Name>
       <X>3</X>
-      <Y>23</Y>
+      <Y>49</Y>
       <Visible>False</Visible>
       <Location>Top</Location>
       <Items>
@@ -2017,7 +2116,7 @@
     <ToolStrip>
       <Name>toolStripPanZoom</Name>
       <X>3</X>
-      <Y>23</Y>
+      <Y>49</Y>
       <Visible>False</Visible>
       <Location>Top</Location>
       <Items>
@@ -2033,7 +2132,7 @@
     <ToolStrip>
       <Name>toolStripDocument</Name>
       <X>3</X>
-      <Y>23</Y>
+      <Y>49</Y>
       <Visible>False</Visible>
       <Location>Top</Location>
       <Items>
@@ -2046,7 +2145,7 @@
     <ToolStrip>
       <Name>toolStripFont</Name>
       <X>3</X>
-      <Y>23</Y>
+      <Y>49</Y>
       <Visible>False</Visible>
       <Location>Top</Location>
       <Items>
@@ -2075,7 +2174,7 @@
     <ToolStrip>
       <Name>toolStripControlPoint</Name>
       <X>3</X>
-      <Y>23</Y>
+      <Y>49</Y>
       <Visible>False</Visible>
       <Location>Top</Location>
       <Items>
@@ -2085,32 +2184,23 @@
       </Items>
     </ToolStrip>
     <ToolStrip>
-      <Name>toolStripRotateDocument</Name>
+      <Name>toolStripDMS</Name>
       <X>3</X>
-      <Y>23</Y>
+      <Y>49</Y>
       <Visible>False</Visible>
       <Location>Top</Location>
       <Items>
-        <Item>Document.RotateCounterclockwise</Item>
-        <Item>Document.RotateClockwise</Item>
-      </Items>
-    </ToolStrip>
-    <ToolStrip>
-      <Name>toolStripAppearance</Name>
-      <X>3</X>
-      <Y>23</Y>
-      <Visible>False</Visible>
-      <Location>Top</Location>
-      <Items>
-        <Item>DropDown.ColorFill</Item>
-        <Item>DropDown.Opacity</Item>
-        <Item>DropDown.HatchPattern</Item>
+        <Item>Combo.DMS</Item>
+        <Item>DMS.Login</Item>
+        <Item>DMS.Open</Item>
+        <Item>DMS.SaveAs</Item>
+        <Item>DMS.CheckIn</Item>
       </Items>
     </ToolStrip>
     <ToolStrip>
       <Name>toolStripEdit</Name>
       <X>3</X>
-      <Y>23</Y>
+      <Y>49</Y>
       <Visible>False</Visible>
       <Location>Top</Location>
       <Items>
@@ -2126,9 +2216,21 @@
       </Items>
     </ToolStrip>
     <ToolStrip>
+      <Name>toolStripAppearance</Name>
+      <X>3</X>
+      <Y>49</Y>
+      <Visible>False</Visible>
+      <Location>Top</Location>
+      <Items>
+        <Item>DropDown.ColorFill</Item>
+        <Item>DropDown.Opacity</Item>
+        <Item>DropDown.HatchPattern</Item>
+      </Items>
+    </ToolStrip>
+    <ToolStrip>
       <Name>toolStripMeasure</Name>
       <X>3</X>
-      <Y>23</Y>
+      <Y>49</Y>
       <Visible>False</Visible>
       <Location>Top</Location>
       <Items>
@@ -2153,7 +2255,7 @@
       <Name>toolStripRedaction</Name>
       <Module>Redaction</Module>
       <X>3</X>
-      <Y>23</Y>
+      <Y>49</Y>
       <Visible>False</Visible>
       <Location>Top</Location>
       <Items>
@@ -2164,7 +2266,7 @@
     <ToolStrip>
       <Name>toolStripOrder</Name>
       <X>3</X>
-      <Y>23</Y>
+      <Y>49</Y>
       <Visible>False</Visible>
       <Location>Top</Location>
       <Items>
@@ -2177,7 +2279,7 @@
     <ToolStrip>
       <Name>toolStripAlignment</Name>
       <X>3</X>
-      <Y>23</Y>
+      <Y>49</Y>
       <Visible>False</Visible>
       <Location>Top</Location>
       <Items>
@@ -2204,7 +2306,7 @@
     <ToolStrip>
       <Name>toolStripAdvancedText</Name>
       <X>3</X>
-      <Y>23</Y>
+      <Y>49</Y>
       <Visible>False</Visible>
       <Location>Top</Location>
       <Items>
@@ -2220,7 +2322,7 @@
     <ToolStrip>
       <Name>toolStripDigitalSignature</Name>
       <X>3</X>
-      <Y>23</Y>
+      <Y>49</Y>
       <Visible>False</Visible>
       <Location>Top</Location>
       <Items>
@@ -2231,7 +2333,7 @@
     <ToolStrip>
       <Name>toolStripFile</Name>
       <X>3</X>
-      <Y>23</Y>
+      <Y>49</Y>
       <Visible>False</Visible>
       <Location>Top</Location>
       <Items>
@@ -2252,23 +2354,20 @@
       </Items>
     </ToolStrip>
     <ToolStrip>
-      <Name>toolStripDMS</Name>
+      <Name>toolStripRotateDocument</Name>
       <X>3</X>
-      <Y>23</Y>
+      <Y>49</Y>
       <Visible>False</Visible>
       <Location>Top</Location>
       <Items>
-        <Item>Combo.DMS</Item>
-        <Item>DMS.Login</Item>
-        <Item>DMS.Open</Item>
-        <Item>DMS.SaveAs</Item>
-        <Item>DMS.CheckIn</Item>
+        <Item>Document.RotateCounterclockwise</Item>
+        <Item>Document.RotateClockwise</Item>
       </Items>
     </ToolStrip>
     <ToolStrip>
       <Name>toolStripText</Name>
       <X>3</X>
-      <Y>47</Y>
+      <Y>99</Y>
       <Visible>False</Visible>
       <Location>Top</Location>
       <Items>
